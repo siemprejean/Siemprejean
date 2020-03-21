@@ -1,0 +1,39 @@
+body{
+    background-color: aliceblue 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#tab{
+    background-color: black;
+    background-size: 100%;
+}
+#texto{
+    color: black;
+    font-family: Impact
+}
+#tabla{
+    color: black;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: skyblue;
+	transition: all .3s;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}

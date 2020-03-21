@@ -1,0 +1,66 @@
+.inline{
+    display:inline;
+    color: black;
+    font-family: Impact;
+}
+#fondo{
+    background-color: gainsboro;
+    background-size: 100%;
+}
+#tab{
+    background-color: black;
+    background-size: 100%;
+}
+#backgraun{
+    background-color: white;
+    background-size: 100%;
+}
+.navegacion ul{
+	list-style: none;
+    width: 100%;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: skyblue;
+	transition: all .3s;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+#navega{
+    color: white;
+}
+.Cars{
+    margin:0 !important;
+    padding:0 !important;
+}
+#estilo{
+    font-family: Times new Roman;
+    color: black;
+}
+.lowspace{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#margen{
+    background-color: white;
+    background-size: 100%;
+}
+#followup{
+    background-color: white;
+}

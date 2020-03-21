@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/28/2019, 03:19:06 PM
+    Author     : javi0
+*/
+
+body{
+    background-color: aliceblue
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+#texto{
+    color: black;
+    font-family: Impact
+}
+
+#logo_inicio{
+    height:150px;
+
+}
+#tab{
+    background-color: black;
+    background-size: 100%;
+}
+.navegacion ul{
+	list-style: none;
+    width: 100%;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: skyblue;
+	transition: all .3s;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+hr{
+    border: 1px solid rgb(4, 238, 255);
+}
+
+#texto{
+    color:black;
+}
+#Sucursal
+    color:black;
+}

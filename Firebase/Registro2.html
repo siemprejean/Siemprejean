@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registrarse</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="stylesheet" href="registro.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBKJFusmmenHglaDcSBJKu1mi65_eEyyrw",
+                authDomain: "consultec507.firebaseapp.com",
+                databaseURL: "https://consultec507.firebaseio.com",
+                projectId: "consultec507",
+                storageBucket: "consultec507.appspot.com",
+                messagingSenderId: "796676785606",
+                appId: "1:796676785606:web:f0318c01dbbd1809411ec7",
+                measurementId: "G-QKJBH4W3NL"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="Registro.js"></script>
+    </head>
+    <body>
+        <section>
+
+
+            <div class="container">
+                <div class="row" id="texto">
+                    <div class= "col-xs-12 text-center">
+                        <a href="Proyect.html">
+                            <img src="car.png" class="center" id="logo_inicio">
+                        </a>
+                        <h3>Html Automotors</h3>
+                        <div class="row" id="tab">
+                            <div class="col-md-12 text-center">
+                                <nav class="navegacion">
+                                    <ul class="menu">
+                                        <li><a href="Proyect.html">Inicio</a></li>
+                                        <li><a href="Inicioses.html">Clientes</a></li>
+                                        <li><a href="#">Servicios</a></li>
+                                        <li><a href="#">Contacto</a></li>
+                                        <li><a href="#">Trabaja con nosotros</a></li>
+                                    </ul>
+                                </nav> 
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <h5>Ingresar datos del cliente</h5>
+                    </div>
+                </div>
+
+                <hr>
+
+
+
+                <div class="row">
+                    <div class="col s12">
+
+                        
+                        <form id="formulario" method="post">
+                            
+                            <div class="form-group">
+                                <label for="fname">Nombre</label>
+                                <input type="text" id="fname" class="form-control" maxlength="15" title="Introduce entre 2 a 15 letras" pattern="[A-Za-z]{2,15}"placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Apellido</label>
+                                <input type="text" id="lname" class="form-control" title="Introduce entre 2 a 15 letras" placeholder="Apellido" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel">Telefono</label>
+                                <input type="text" id="tel" pattern="[0-9]{9}" class="form-control" placeholder="Telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Correo electronico</label>
+                                <input type="email" id="exampleInputEmail" class="form-control" placeholder="Correo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="edad">Edad</label>
+                                <input type="number" id="edad" class="form-control" placeholder="Edad" min="18" max="100" title="Numero de 9 cifras" required>
+                            </div>
+                            
+                            <label for="Sucursal">Sucursal</label>
+                            <select id="region">
+                            <option id="sucursal" value="Panama">Panama</option>
+                            <option id="sucursal" value="Colon">Colon</option>
+                            <option id="sucursal" value="Darien">Darien</option>
+                            <option id="sucursal" value="Bocas del Toro">Bocas del Toro</option>
+                            <option id="sucursal" value="Los Santos">Los Santos</option>
+                            <option id="sucursal" value="Herrera">Herrera</option>
+                            <option id="sucursal" value="Cocle">Cocle</option>
+                            <option id="sucursal" value="Veraguas">Veraguas</option>
+                            <option id="sucursal" value="Chiriqui">Chiriqui</option>
+                            <option id="sucursal" value="Chorrera">Chorrera</option>
+                            <option id="sucursal" value="Colombia">Colombia</option>
+                            <option id="sucursal" value="Costa Rica">Costa Rica</option>
+                            <option id="sucursal" value="San Miguelito">San Miguelito</option>
+                            <option id="sucursal" value="San Blas">San Blas</option>
+                            <option id="sucursal" value="Jamaica">Jamaica</option>
+                            </select>
+
+
+                                <div class="row text-center">
+
+                                    <button type="button" onclick="return storeData();" class="btn btn-primary" id="registrarse" type="submit">Registrarse</button>
+                                    <br><br>
+                                </div>
+
+                                </form>
+
+
+                            </div>
+                    </div>
+                <p id="mensajeError"></p>
+                </div>
+
+                </section>
+            </body>
+        </html>

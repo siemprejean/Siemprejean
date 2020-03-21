@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Cars</title>
+        <link href="slide.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyBKJFusmmenHglaDcSBJKu1mi65_eEyyrw",
+                authDomain: "consultec507.firebaseapp.com",
+                databaseURL: "https://consultec507.firebaseio.com",
+                projectId: "consultec507",
+                storageBucket: "consultec507.appspot.com",
+                messagingSenderId: "796676785606",
+                appId: "1:796676785606:web:f0318c01dbbd1809411ec7",
+                measurementId: "G-QKJBH4W3NL"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="row" >
+                <div class="col-md-12 text-center">
+                    <img src="car.png" class="inline"><h1 class="inline"> HTML AUTOMOTORS</h1>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-xs-3 Cars">
+                <img src="Tiny.jpeg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 Cars">
+                <img src="Tiny2.jpg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 Cars">
+                <img src="Tiny3.jpeg" class="img-responsive">
+            </div>
+            <div class="col-xs-3 Cars">
+                <img src="Tiny4.jpeg" class="img-responsive">
+
+            </div>
+        </div>
+        <div class="row" id="tab">
+            <div class="col-md-12 text-center">
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li><a href="Proyect.html">Inicio</a></li>
+                        <li><a href="Registro2.html">Registrar cliente</a></li>
+                        <li><a href="Editar.html">Editar informacion de cliente</a></li>
+                        <li><a href="Consulta.html">Consultar clientes</a></li>
+                        <li><a href="borrar.html">Inhabilitar cliente</a></li>
+                        <li><a href="inha.html">Clientes inhabilitados</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Slider.jpeg" alt="Los Angeles">
+                </div>
+
+                <div class="item">
+                    <img src="Slider2.jpeg" alt="Chicago">
+                </div>
+
+                <div class="item">
+                    <img src="Slider3.jpeg" alt="New York">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <footer>
+            <div class="row" id="followup">
+                <div class="col-md-6">
+                    <br>
+                    <h4> Contactanos al numero telefonico: 123456789</h4>
+                </div>
+                <div class="col-md-6">
+                    <img class="inline" src="Social.png"><h4 class="inline"> Siguenos en nuestras redes como: @HTMLCARS </h4>
+                </div>
+            </div>
+        </footer>
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

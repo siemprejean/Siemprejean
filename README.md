@@ -1,3 +1,2 @@
-La pagina principal seria  Proyect.html, de ahi todas se enlazan, las unicas opciones funcionales son las de manejo de cliente, los demas botones solo son esteticos
-se hizo de manera que cada pagina fuera agradable a la vista, las paginas principales mantienen imagenes referentes a autos y las de manejo de clientes tienen un dise;o
-mas simple, espero les guste el dise;o que se realizo! 
+The main page would be Proyect.html, from there they are all linked, the only functional options are the customer management options, the other buttons are only aesthetic
+It was done in such a way that each page was pleasing to the eye, the main pages have images referring to cars and the customer management pages have a simpler design.
